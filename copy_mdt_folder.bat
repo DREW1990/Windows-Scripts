@@ -1,6 +1,4 @@
 REM For Microsoft Deployment Toolkit
 REM Copy a folder from the Deployment Share folder to the computer being imaged
 
-xcopy.exe "%deployroot%\source\folder\*.*" "c:\destination\folder\on\imaged\computer" /Q /H /E /I /Y
-
-xcopy.exe "%deployroot%\Printer-Drivers\Canon\C5540_C5560\*.*" "c:\Printer-Drivers\Canon\C5540_C5560" /Q /H /E /I /Y
+xcopy.exe "%deployroot%\source\folder\*.*" "%OSDisk%\destination\folder\on\imaged\computer" /Q /H /E /I /Y
